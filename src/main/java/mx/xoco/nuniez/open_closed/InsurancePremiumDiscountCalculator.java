@@ -9,4 +9,11 @@ public class InsurancePremiumDiscountCalculator {
         return 0;
     }
 
+    public int calculatePremiumDiscountPercent(VehicleInsuranceCustomerProfile customer) {
+        if (customer.isLoyalCustomer()) {
+            return 20;
+        }
+        return 0;
+    }
+
 }
