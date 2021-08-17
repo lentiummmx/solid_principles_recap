@@ -1,4 +1,6 @@
-package mx.xoco.nuniez.open_closed;
+package mx.xoco.nuniez.open_closed.intfc.impl;
+
+import mx.xoco.nuniez.open_closed.intfc.ICustomerProfile;
 
 import java.util.Random;
 
