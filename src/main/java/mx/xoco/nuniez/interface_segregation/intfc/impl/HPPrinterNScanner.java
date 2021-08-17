@@ -1,8 +1,9 @@
 package mx.xoco.nuniez.interface_segregation.intfc.impl;
 
-import mx.xoco.nuniez.interface_segregation.intfc.IMultiFunction;
+import mx.xoco.nuniez.interface_segregation.intfc.IPrint;
+import mx.xoco.nuniez.interface_segregation.intfc.IScan;
 
-public class HPPrinterNScanner implements IMultiFunction {
+public class HPPrinterNScanner implements IPrint, IScan {
     @Override
     public void print() {
         // Real printing code starts here
@@ -33,15 +34,5 @@ public class HPPrinterNScanner implements IMultiFunction {
         //
         //
         // Real photo scan code ends here
-    }
-
-    @Override
-    public void fax() {
-
-    }
-
-    @Override
-    public void internetFax() {
-
     }
 }

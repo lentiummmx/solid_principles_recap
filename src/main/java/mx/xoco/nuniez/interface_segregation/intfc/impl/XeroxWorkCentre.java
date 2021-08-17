@@ -1,8 +1,10 @@
 package mx.xoco.nuniez.interface_segregation.intfc.impl;
 
-import mx.xoco.nuniez.interface_segregation.intfc.IMultiFunction;
+import mx.xoco.nuniez.interface_segregation.intfc.IFax;
+import mx.xoco.nuniez.interface_segregation.intfc.IPrint;
+import mx.xoco.nuniez.interface_segregation.intfc.IScan;
 
-public class XeroxWorkCentre implements IMultiFunction {
+public class XeroxWorkCentre implements IPrint, IScan, IFax {
     @Override
     public void print() {
         // Real printing code starts here
