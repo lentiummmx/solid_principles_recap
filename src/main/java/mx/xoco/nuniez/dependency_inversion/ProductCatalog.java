@@ -2,6 +2,8 @@ package mx.xoco.nuniez.dependency_inversion;
 
 import mx.xoco.nuniez.dependency_inversion.intfc.IProductRepository;
 
+import java.util.List;
+
 public class ProductCatalog {
 
     private IProductRepository productRepository;
@@ -11,7 +13,7 @@ public class ProductCatalog {
     }
 
     public void listAllProducts() {
-        productRepository.getAllProductNames();
+        List<String> allProductNames = productRepository.getAllProductNames();
         // List all products here
     }
 
