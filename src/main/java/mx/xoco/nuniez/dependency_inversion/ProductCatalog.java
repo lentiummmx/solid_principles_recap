@@ -1,13 +1,17 @@
 package mx.xoco.nuniez.dependency_inversion;
 
-import mx.xoco.nuniez.dependency_inversion.factory.ProductFactory;
 import mx.xoco.nuniez.dependency_inversion.intfc.IProductRepository;
 
 public class ProductCatalog {
 
+    private IProductRepository productRepository;
+
+    public ProductCatalog(IProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
     public void listAllProducts() {
-        IProductRepository sqlProductRepository = ProductFactory.create();
-        sqlProductRepository.getAllProductNames();
+        productRepository.getAllProductNames();
         // List all products here
     }
 
