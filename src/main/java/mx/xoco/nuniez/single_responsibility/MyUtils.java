@@ -1,4 +1,4 @@
-package mx.xoco.nuniez.utils;
+package mx.xoco.nuniez.single_responsibility;
 
 import mx.xoco.nuniez.single_responsibility.Employee;
 

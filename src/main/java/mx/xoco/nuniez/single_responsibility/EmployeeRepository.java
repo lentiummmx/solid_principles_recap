@@ -1,7 +1,5 @@
 package mx.xoco.nuniez.single_responsibility;
 
-import mx.xoco.nuniez.utils.MyUtils;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
